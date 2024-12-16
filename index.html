@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Clone</title>
+    <link rel="stylesheet" href="src/output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+
+</head>
+
+<body class="bg-black text-white flex ">
+
+
+    <div class="left w-[10vw] ml-[5vw] md:ml-0 md:w-[30vw] h-[140vh]  flex flex-col  items-center text-[25px] font-bold mt-[10px] sticky top-[20px]">
+        <img src="logo.svg" alt="" width="40px" height="35px" class="mt-[6vh] ml-[5vw] md:ml-0 mr-[10vw]">
+        <div class="options  flex flex-col w-[15vw] h-[75vh] md:h-[100vh] border-black border gap-[10px] mt-[20px] justify-around ">
+
+            <div class="flex gap-3 h-[50px] w-[150px] pl-[7px] pt-[5px]
+                 rounded-[30px] hover:cursor-pointer hover:bg-slate-900 "><span
+                    class="material-symbols-outlined  pt-[8px] ">
+                    home
+                </span> <span class="hidden md:block">Home</span></div>
+            <div class="flex gap-3 h-[50px] w-[220px] pl-[7px] pt-[5px]
+            rounded-[30px] hover:cursor-pointer hover:bg-slate-900 "><span class="material-symbols-outlined pt-[8px] ">
+                    notifications
+                </span> <div class="hidden md:block">Notifications</div></div>
+            <div class="flex gap-3 h-[50px] w-[160px] pl-[7px] pt-[5px]
+            rounded-[30px] hover:cursor-pointer hover:bg-slate-900  "><span
+                    class="material-symbols-outlined  pt-[8px]">
+                    search
+                </span> <div class="hidden md:block"> Explore</div></div>
+            <div class="flex gap-3 h-[50px] w-[135px] pl-[7px] pt-[5px]
+            rounded-[30px] hover:cursor-pointer hover:bg-slate-900 "><span class="material-symbols-outlined  pt-[8px]">
+                    chat
+                </span> <div class="hidden md:block"> Grok</div></div>
+            <div class="flex gap-3 h-[50px] w-[125px] pl-[7px] pt-[5px]
+            rounded-[30px] hover:cursor-pointer hover:bg-slate-900 "><span class="material-symbols-outlined  pt-[8px]">
+                    lists
+                </span> <div class="hidden md:block"> Lists</div></div>
+            <div class="flex gap-3 h-[50px] w-[190px] pl-[7px] pt-[5px]
+            rounded-[30px] hover:cursor-pointer hover:bg-slate-900 "><span class="material-symbols-outlined pt-[8px] ">
+                    bookmarks
+                </span> <div class="hidden md:block"> Bookmarks</div></div>
+            <div class="flex gap-3 h-[50px] w-[220px] pl-[7px] pt-[5px]
+            rounded-[30px] hover:cursor-pointer hover:bg-slate-900 "><span class="material-symbols-outlined pt-[8px] ">
+                    group
+                </span> <div class="hidden md:block"> Communities</div></div>
+            <div class="flex gap-3 h-[50px] w-[175px] pl-[7px] pt-[5px]
+            rounded-[30px] hover:cursor-pointer hover:bg-slate-900 "><span class="material-symbols-outlined pt-[8px] ">
+                    box
+                </span> <div class="hidden md:block"> Premium</div></div>
+            <div class="flex gap-3 h-[50px] w-[150px] pl-[7px] pt-[5px]
+            rounded-[30px] hover:cursor-pointer hover:bg-slate-900 "><span class="material-symbols-outlined pt-[8px] ">
+                    person
+                </span> <div class="hidden md:block"> Profile </div></div>
+            <div class="flex gap-3 h-[50px] w-[125px] pl-[7px] pt-[5px]
+                rounded-[30px] hover:cursor-pointer hover:bg-slate-900 "><span
+                    class="material-symbols-outlined  pt-[8px]">
+                    more_horiz
+                </span> <div class="hidden md:block"> More</div></div>
+                <div
+                class="bg-blue-500 py-[5px] pl-[76px] w-[200px] mt-[20px] rounded-[25px] relative bottom-2 font-bold hover:cursor-pointer hidden md:block">
+                Post
+            </div>
+            <div class="block md:hidden">
+                <span class="material-symbols-outlined pt-[8px] bg-blue-500 rounded-[50%] h-[4vh] w-[4vh] pl-[6px] pb-[7px]">
+                    add
+                </span>
+            </div>
+
+           
+
+        </div>
+        <div class="mt-[30px] flex  justify-between text-[15px] w-[280px] hover:bg-slate-900 hover:cursor-pointer px-[20px] py-[5px]  rounded-[30px]  opacity-[0%] md:opacity-100">
+            <img src="images/profilePic.jpg" alt="" class="w-[50px] h-[50px] rounded-[50%]">
+            <div>
+                <div >Arpan Chakraborty</div>
+                <div class="font-extralight">@ArpanChakraborty</div>
+                
+            </div>
+            <span
+                class="material-symbols-outlined  pt-[8px]">
+                more_horiz
+            </span>
+        </div>
+
+    </div>
+
+    <div class="middle w-[88vw] md:w-[37vw] md:h-[335vh] h-[200vh]  border border-b-0 border-t-0 flex flex-col justify-start  mt-[10px] ">
+
+        <div
+            class="line1 flex flex-row w-[88vw] md:w-[37vw] md:h-[12vh] h-[7vh]  justify-between md:justify-around  pt-[5vh] text-[19px] text-green-100 font-bold border-b  ">
+            <div class="w-[120px] h-[35px]  flex justify-center items-center  relative md:bottom-0 bottom-[3vh] ">
+                For You
+            </div>
+            <div class="w-[120px] h-[35px]  flex justify-center items-center relative left-[5vw] md:left-0   md:bottom-0 bottom-[3vh]">
+                Following
+            </div>
+            <span class="material-symbols-outlined text-xl flex items-center relative  hover:cursor-pointer  left-[10vw] md:left-[5vw] md:bottom-[-8px] bottom-[23px]">
+                settings
+            </span>
+            <div class="w-[73px] h-[1px]  border-[3px] rounded-[5px] border-blue-600 relative md:bottom-[-42px] md:left-[-412px] bottom-[-1vh] left-[-66vw] ">
+            </div>
+        </div>
+
+        <div class="post grid grid-cols-[2fr_9fr] mt-10px h-[15vh] md:min-h-[25vh] border-b">
+            <img src="images/profilePic.jpg" alt="" class="rounded-[50%] h-[40px] w-[40px] md:h-[60px] md:w-[60px] mt-[20px] ml-[15px]">
+            <div class="flex flex-col justify-around col-start-2 col-end-3 md:w-[28vw] w-[68vw] ">
+                <div>What is Happening?!</div>
+                <div class="text-blue-500 flex md:gap-3 gap-2  border-b border-slate-100 md:w-[28vw] w-[68vw]  md:h-[6vh]">
+                     <span
+                        class="material-symbols-outlined mt-3px  ">
+                        globe_asia
+                    </span><span >Everyone can reply</span></div>
+                <div class="flex justify-between items-center md:w-[28vw] w-[68vw]">
+
+                    <div class="icon text-blue-500">
+                        <span class="material-symbols-outlined hover:cursor-pointer">
+                            image
+                        </span>
+                        <span class="material-symbols-outlined hover:cursor-pointer">
+                            gif
+                        </span>
+                        <span class="material-symbols-outlined hover:cursor-pointer">
+                            ballot
+                        </span>
+                        <span class="material-symbols-outlined hover:cursor-pointer">
+                            sentiment_satisfied
+                        </span>
+                        <span class="material-symbols-outlined hover:cursor-pointer">
+                            calendar_month
+                        </span>
+                        <span class="material-symbols-outlined hover:cursor-pointer">
+                            pin_drop
+                        </span>
+                    </div>
+
+                    <div
+                        class="bg-blue-500 py-[5px] px-[20px] rounded-[25px] relative bottom-2 font-bold hover:cursor-pointer">
+                        Post
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class=" grid grid-cols-[2fr_9fr] mt-10px h-[25vh] border-b min-h-[25vh]">
+
+            <div class="col-start-2 flex flex-col justify-around">
+                <div>
+
+                    <span class="font-bold hover:underline hover:cursor-pointer">
+                        Elon Mask
+                    </span>
+                    <span class="text-slate-400 font-light">
+                        @ElonMask . 6h
+                    </span>
+                </div>
+                <div class="pr-[5px]">
+                    I spent $44 billion for this app and now Lizard boy just decided to hit copy and paste. It’s
+                    personal now. See you in the cage, Zuck.
+                </div>
+                <div class="like flex justify-around">
+                    <div
+                        class=" hover:bg-slate-800 rounded-[20px] pr-[5px] pl-[5px] hover:cursor-pointer  hover:text-blue-500">
+
+                        <span class="material-symbols-outlined relative top-1">
+                            chat_bubble
+                        </span>
+                        <span class="relative bottom-[1px]">
+                            2k
+                        </span>
+                    </div>
+                    <div
+                        class=" hover:bg-slate-800 rounded-[20px] pr-[5px] pl-[5px] hover:cursor-pointer  hover:text-green-500">
+
+                        <span class="material-symbols-outlined relative top-1">
+                            repeat
+                        </span>
+                        <span>1k</span>
+                    </div>
+                    <div
+                        class=" hover:bg-slate-800 rounded-[20px] pr-[5px] pl-[5px] hover:cursor-pointer  hover:text-pink-500">
+
+                        <span class="material-symbols-outlined relative top-1">
+                            favorite
+                        </span>
+                        <span>4k</span>
+                    </div>
+                    <div
+                        class=" hover:bg-slate-800 rounded-[20px] pr-[5px] pl-[5px] hover:cursor-pointer  hover:text-purple-500">
+
+                        <span class="material-symbols-outlined relative top-1">
+                            bar_chart
+                        </span>
+                        <span>
+                            1k
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="legend grid grid-cols-[1.2fr_8.8fr] w-[88vw] md:w-[37vw] mt-[10px]  mb-[20px] md:h-[90vh] h-[45vh]">
+            <!-- <div class="legend grid grid-cols-[1.2fr_8.8fr] mt-[10px] h-[90vh] mb-[20px]"> -->
+            
+            <img src="images/profilePic.jpg" alt="" class="col-start-1 h-[4vh] w-[4vh] md:h-[6vh] md:w-[6vh] rounded-[50%] ml-[10px] ">
+            <div class="col-start-2  flex flex-col justify-between  ">
+                <!-- <div class="col-start-2  flex flex-col justify-between"> -->
+                <div class="flex gap-[2px] ml-[10px] md:ml-0">
+                    <div class="font-bold hover:underline hover:cursor-pointer">Arpan Chakraborty</div>
+                    <div class="text-slate-400 font-light">@ArpanChakraborty.2h</div>
+                </div>
+                <div class="ml-[10px] md:ml-0">Living Legend </div>
+                <div class="mt-4  md:h-[75vh] md:w-[32vw]  ">
+                    <img src="images/GEGqnodacAAoyCO.jpeg" alt="" class="rounded-[15px] w-[70vw] md:w-[33vw]">
+                </div>
+                <div class="like flex justify-around  relative md:top-0 top-[1vh] w-[70vw] md:w-[33vw]">
+                    <div
+                        class=" hover:bg-slate-800 rounded-[20px] pr-[5px] pl-[5px] hover:cursor-pointer  hover:text-blue-500">
+
+                        <span class="material-symbols-outlined relative top-1">
+                            chat_bubble
+                        </span>
+                        <span class="relative bottom-[1px]">
+                            2k
+                        </span>
+                    </div>
+                    <div
+                        class=" hover:bg-slate-800 rounded-[20px] pr-[5px] pl-[5px] hover:cursor-pointer  hover:text-green-500">
+
+                        <span class="material-symbols-outlined relative top-1">
+                            repeat
+                        </span>
+                        <span>1k</span>
+                    </div>
+                    <div
+                        class=" hover:bg-slate-800 rounded-[20px] pr-[5px] pl-[5px] hover:cursor-pointer  hover:text-pink-500">
+
+                        <span class="material-symbols-outlined relative top-1">
+                            favorite
+                        </span>
+                        <span>4k</span>
+                    </div>
+                    <div
+                        class=" hover:bg-slate-800 rounded-[20px] pr-[5px] pl-[5px] hover:cursor-pointer  hover:text-purple-500">
+
+                        <span class="material-symbols-outlined relative top-1">
+                            bar_chart
+                        </span>
+                        <span>
+                            1k
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-[1.2fr_8.8fr] mt-[10px]">
+            <!-- <img src="images/J8k8HnSD_bigger.png" alt="" class="col-start-1 h-[6vh] w-[6vh] rounded-[50%] ml-[10px] "> -->
+            <img src="images/J8k8HnSD_bigger.png" alt="" class="col-start-1 h-[4vh] w-[4vh] md:h-[6vh] md:w-[6vh] rounded-[50%] ml-[10px] ">
+            <!-- <div class="col-start-2 h-[62vh] flex flex-col justify-between"> -->
+                <div class="col-start-2  flex flex-col justify-between  ">
+                <div class="flex gap-[2px] ml-[10px] md:ml-0 ">
+                    <div class="font-bold hover:underline hover:cursor-pointer">Non Aesthetic Things</div>
+                    <div class="text-slate-400 font-light">@CodeMeme . 7h</div>
+                </div>
+                <div class="ml-[10px] md:ml-0">Living Legend </div>
+                <div class="mt-4  md:h-[50vh] md:w-[25vw]  ">
+                    <img src="images/works-doesnt-work.jpg" alt="" class="rounded-[15px] ">
+                </div>
+                <div class="like flex justify-around mb-[20px] mt-[20px] md:mt-0 md:w-[16vw] w-[60vw] relative right-[3px]">
+                    <div
+                        class=" hover:bg-slate-800 rounded-[20px] pr-[5px] pl-[5px] hover:cursor-pointer  hover:text-blue-500">
+
+                        <span class="material-symbols-outlined relative top-1">
+                            chat_bubble
+                        </span>
+                        <span class="relative bottom-[1px]">
+                            2k
+                        </span>
+                    </div>
+                    <div
+                        class=" hover:bg-slate-800 rounded-[20px] pr-[5px] pl-[5px] hover:cursor-pointer  hover:text-green-500">
+
+                        <span class="material-symbols-outlined relative top-1">
+                            repeat
+                        </span>
+                        <span>1k</span>
+                    </div>
+                    <div
+                        class=" hover:bg-slate-800 rounded-[20px] pr-[5px] pl-[5px] hover:cursor-pointer  hover:text-pink-500">
+
+                        <span class="material-symbols-outlined relative top-1">
+                            favorite
+                        </span>
+                        <span>4k</span>
+                    </div>
+                    <div
+                        class=" hover:bg-slate-800 rounded-[20px] pr-[5px] pl-[5px] hover:cursor-pointer  hover:text-purple-500">
+
+                        <span class="material-symbols-outlined relative top-1">
+                            bar_chart
+                        </span>
+                        <span>
+                            1k
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="third">
+            <!-- <div class="legend grid grid-cols-[1.2fr_8.8fr] mt-[10px] h-[90vh] mb-[20px]"> -->
+                <div class="legend grid grid-cols-[1.2fr_8.8fr] w-[88vw] md:w-[37vw] mt-[10px]  mb-[20px] md:h-[90vh] h-[45vh]">
+                
+                    <img src="images/images.jpeg" alt="" class="col-start-1 h-[4vh] w-[4vh] md:h-[6vh] md:w-[6vh] rounded-[50%] ml-[10px] ">
+                <div class="col-start-2  flex flex-col justify-between">
+                    <div class="flex gap-[2px]">
+                        <div class="font-bold hover:underline hover:cursor-pointer ml-[10px] md:ml-0">Coding Ninjas</div>
+                        <div class="text-slate-400 font-light ml-[10px] md:ml-0">@CodingNinjas . 4d</div>
+                    </div>
+                    <div class="ml-[10px] md:ml-0">Oh, That's why😂 </div>
+                    <div class="mt-4  md:h-[75vh] md:w-[32vw]  ">
+                        <img src="images/programming-meme-2.jpg" alt="" class="rounded-[15px] w-[70vw] md:w-[33vw]">
+                    </div>
+                    <!-- <div class="like flex justify-around  relative top-[16vh]"> -->
+                        <div class="like flex justify-around  relative md:top-[15vh] top-[1vh] w-[70vw] md:w-[33vw]">
+                        <div
+                            class=" hover:bg-slate-800 rounded-[20px] pr-[5px] pl-[5px] hover:cursor-pointer  hover:text-blue-500">
+
+                            <span class="material-symbols-outlined relative top-1">
+                                chat_bubble
+                            </span>
+                            <span class="relative bottom-[1px]">
+                                2k
+                            </span>
+                        </div>
+                        <div
+                            class=" hover:bg-slate-800 rounded-[20px] pr-[5px] pl-[5px] hover:cursor-pointer  hover:text-green-500">
+
+                            <span class="material-symbols-outlined relative top-1">
+                                repeat
+                            </span>
+                            <span>1k</span>
+                        </div>
+                        <div
+                            class=" hover:bg-slate-800 rounded-[20px] pr-[5px] pl-[5px] hover:cursor-pointer  hover:text-pink-500">
+
+                            <span class="material-symbols-outlined relative top-1">
+                                favorite
+                            </span>
+                            <span>4k</span>
+                        </div>
+                        <div
+                            class=" hover:bg-slate-800 rounded-[20px] pr-[5px] pl-[5px] hover:cursor-pointer  hover:text-purple-500">
+
+                            <span class="material-symbols-outlined relative top-1">
+                                bar_chart
+                            </span>
+                            <span>
+                                1k
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="right mt-[20px] ml-[10px] sticky top-[20px]  w-[30vw] h-[140vh] hidden md:block">
+
+        <div class="flex flex-col">
+            <input type="text" placeholder="Search"
+                class=" h-[35px] w-[18vw] rounded-[25px] px-4 bg-zinc-900 text-white ml-[10px]">
+            <div
+                class=" w-[19vw] h-[67vh] m-2 rounded-[10px] mr-[10px]  bg-zinc-900 flex flex-col justify-around pl-[15px]">
+                <div class="text-[22px] font-bold">Whats Happening</div>
+                <div>
+                    <div class="text-[13px]">
+                        Tending in India
+                    </div>
+                    <div class="font-bold ">#SigmaCourse</div>
+                    <div class="text-[13px]">777.7k Posts</div>
+                </div>
+                <div>
+                    <div class="text-[13px]">
+                        Tending in India
+                    </div>
+                    <div class="font-bold ">#CR7</div>
+                    <div class="text-[13px]">2M Posts</div>
+                </div>
+                <div>
+                    <div class="text-[13px]">
+                        Tending in India
+                    </div>
+                    <div class="font-bold ">#MenInBlues</div>
+                    <div class="text-[13px]">1.2M Posts</div>
+                </div>
+                <div>
+                    <div class="text-[13px]">
+                        Tending in India
+                    </div>
+                    <div class="font-bold ">#BGT</div>
+                    <div class="text-[13px]">800k Posts</div>
+                </div>
+
+
+
+            </div>
+            <div class=" w-[19vw] h-[45vh] m-2 rounded-[10px] mr-[10px]  bg-zinc-900 flex flex-col justify-around">
+                <div>
+                    <div class="relative left-5 text-xl font-bold"> Who To Follow</div>
+                </div>
+                <div class="flex justify-around hover:bg-slate-800 hover:cursor-pointer py-[10px]">
+                    <img src="images/https___dev-to-uploads.s3.amazonaws.com_uploads_articles_096baapsqqt9fks0us99.png"
+                        alt="react" class="h-[40px] w-[40px] rounded-[50%] mt-[5px]">
+                    <div>
+                        <div>React</div>
+                        <div class="font-light">@react</div>
+                    </div>
+
+                    <div class="border pt-[10px] px-[20px] bg-white text-black rounded-[25px] font-bold">Follow</div>
+
+                </div>
+                <div class="flex justify-around  hover:bg-slate-800 hover:cursor-pointer py-[10px]">
+                    <img src="images/images (1).jpeg" alt="react" class="h-[40px] w-[40px] rounded-[50%] mt-[5px]">
+                    <div>
+                        <div>GitHub</div>
+                        <div class="font-light">@github</div>
+                    </div>
+
+                    <div class="border pt-[10px] px-[20px] bg-white text-black rounded-[25px] font-bold">Follow</div>
+
+                </div>
+                <div class="flex justify-around  hover:bg-slate-800 hover:cursor-pointer py-[10px]">
+                    <img src="images/tail.png" alt="react" class="h-[40px] w-[40px] rounded-[50%] mt-[5px]">
+                    <div>
+                        <div>Tailwind</div>
+                        <div class="font-light">@tailwind</div>
+                    </div>
+
+                    <div class="border pt-[10px] px-[20px] bg-white text-black rounded-[25px] font-bold">Follow</div>
+
+                </div>
+            </div>
+        </div>
+        <div
+            class="pol flex gap-x-4 gap-y-2 text-[12px] text-slate-200 font-light ml-[15px] h-[6vh] w-[18vw] flex-wrap">
+            <div class="hover:underline hover:cursor-pointer">
+                Service
+            </div>
+            <div class="hover:underline hover:cursor-pointer">
+                Terms
+            </div>
+            <div class="hover:underline hover:cursor-pointer">
+                Privacy Policy
+            </div>
+            <div class="hover:underline hover:cursor-pointer">
+                Cookies
+            </div>
+            <div class="hover:underline hover:cursor-pointer">
+                Adds
+            </div>
+            <div class="hover:underline hover:cursor-pointer ">
+                Accessibility
+            </div>
+            <div class="hover:underline hover:cursor-pointer">
+                About
+            </div>
+            <div class="hover:underline hover:cursor-pointer ">
+                Contact
+            </div>
+        </div>
+        <div class="text-blue-600 hover:underline ml-[13px] mt-[5px] hover:cursor-pointer">
+            Show More
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
